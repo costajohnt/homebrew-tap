@@ -16,14 +16,15 @@ cask "murmur" do
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
-  app "Murmur.app"
-
   # Self-signed, not notarized (no Apple Developer Program membership), so
   # Gatekeeper refuses a quarantined copy. Same step as Murmur's install.sh.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Murmur.app"]
+  # Clears the staged copy before `app` moves it: install steps can't name
+  # appdir, and the move keeps the cleared attributes.
+  preflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "Murmur.app"], chdir: "."
   end
+
+  app "Murmur.app"
 
   zap trash: [
     "~/Library/Application Support/Murmur",
