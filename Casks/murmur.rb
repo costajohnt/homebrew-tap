@@ -1,7 +1,7 @@
 cask "murmur" do
   # version and sha256 are rewritten by costajohnt/murmur's release workflow.
-  version "1.3.2"
-  sha256 "3631d28eca8d14e7b9ccb8fbbb76ccadc18ff3323010ff07707598521ed43521"
+  version "1.4.0"
+  sha256 "2c8f55586d7eb7e706b19ec9afd62370f42c9ac0ba6917bcf08a3cbed0a4c0c8"
 
   url "https://github.com/costajohnt/murmur/releases/download/v#{version}/Murmur-v#{version}.zip"
   name "Murmur"
