@@ -5,23 +5,23 @@ class Rbcop < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.2/rbcop-0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "6d0cf329a6fd5e5883fd1b28b205d545b47e982c98752f8085c01f70066d44e9"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "f0a23d0dbe31ebc013c2450941321366c383565610a9b9cee381b83d0a1710a8"
     end
     on_intel do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.2/rbcop-0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "634209744a5a762e1b13a78617a2a3366280e1bbaaea6ab6167a7448e628920a"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "e6c4be15199c400d4dd2013f1fee80ec159f4359f5ac8de8bd4ab64a8b3a14ae"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.2/rbcop-0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0ed25775516d20957cb4b8e239f603beac8e5d6a35f8570901470ea8208edc34"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5a78d0bb0486f9ee4b4ac02c0311f6713251f1e714b43b011caeb14a5d7319e8"
     end
     on_intel do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.2/rbcop-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "15b24834b6148efa2d46f6ead6c02043548732a155daf30cf268d2bb0ef986f7"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2b3f779cae0ee816b4ab81ed8a770be34d4296e139abe4f5ceb7c31afd85ee3b"
     end
   end
 
@@ -33,7 +33,7 @@ class Rbcop < Formula
   test do
     (testpath/"Gemfile").write ""
     (testpath/"a.rb").write "x = \"a\"\nputs x\n"
-    assert_equal "1.91.0\n", shell_output("#{bin}/rbcop -v")
+    assert_equal "1.92.2\n", shell_output("#{bin}/rbcop -v")
     assert_match "Style/StringLiterals", shell_output("#{bin}/rbcop -f e a.rb", 1)
   end
 end
