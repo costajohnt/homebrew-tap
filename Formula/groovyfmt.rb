@@ -2,28 +2,28 @@
 class Groovyfmt < Formula
   desc "Fast formatter and linter for Groovy, Gradle build scripts, and Jenkinsfiles"
   homepage "https://github.com/costajohnt/groovyfmt"
-  version "0.20.2"
+  version "0.20.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/costajohnt/groovyfmt/releases/download/v#{version}/groovyfmt-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "6963c63a2d4a106a2942a8abc3f79d1eb0241b94d7bb11de3cb289f6e76157e8"
+      sha256 "2e608928d8eb2480fdb9ead1be83643e59e583204dba33cef3034030576cd678"
     end
     on_intel do
       url "https://github.com/costajohnt/groovyfmt/releases/download/v#{version}/groovyfmt-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "6657ddfb406457dd52a3bcaaeb331d57c3e6a627ea65f56951a6c60be866afe8"
+      sha256 "61b6e6e9542beb7963a4953c17890c2956ea8c64cc80d57d16a8517f8e81f181"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/costajohnt/groovyfmt/releases/download/v#{version}/groovyfmt-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0440a9ebd51bae03981cfa00299a94221b160b1e4036401f2a95ab4cd3d11a2e"
+      sha256 "b433c465e08be1c6dd6212ac76dad30820fff3e4896d0e2d40fe8df83fc9f5a7"
     end
     on_intel do
       url "https://github.com/costajohnt/groovyfmt/releases/download/v#{version}/groovyfmt-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "630eb686571db1b8332ad7915c4dfa2d306a9b4d733b48eb1e22b6f5c7eaab33"
+      sha256 "b3a2fd13a091f84cd8df5a2546c28ba19f5042dc3da5f8cb8037663a7f01fabb"
     end
   end
 
