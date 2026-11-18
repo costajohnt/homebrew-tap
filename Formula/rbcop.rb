@@ -5,23 +5,23 @@ class Rbcop < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-aarch64-apple-darwin.tar.gz"
-      sha256 "f0a23d0dbe31ebc013c2450941321366c383565610a9b9cee381b83d0a1710a8"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.2.0/rbcop-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "36d02c4008d0d772257ef7e6b07a710324a5a650c82b8a2295d042672edbf08a"
     end
     on_intel do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-x86_64-apple-darwin.tar.gz"
-      sha256 "e6c4be15199c400d4dd2013f1fee80ec159f4359f5ac8de8bd4ab64a8b3a14ae"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.2.0/rbcop-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e52619ccfb304e484b586e3fd38b03329272d283085e4bc11469f24b5f1b5e6d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5a78d0bb0486f9ee4b4ac02c0311f6713251f1e714b43b011caeb14a5d7319e8"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.2.0/rbcop-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "83081d993b337cc5bdcb34f060ea342da90e80153b04a0666ea3acf121ff07ba"
     end
     on_intel do
-      url "https://github.com/costajohnt/rbcop/releases/download/v0.1.4/rbcop-0.1.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2b3f779cae0ee816b4ab81ed8a770be34d4296e139abe4f5ceb7c31afd85ee3b"
+      url "https://github.com/costajohnt/rbcop/releases/download/v0.2.0/rbcop-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5b90d05f76dc9f89f75f9e20bc823d258b7b313a9c97402b51ab22f200138b0b"
     end
   end
 
