@@ -1,5 +1,11 @@
 # costajohnt/homebrew-tap
 
+Homebrew 7 loads formulae and casks from a third-party tap only once you trust it. Run this once first (skip it on an older Homebrew without `brew trust`):
+
+```sh
+brew trust costajohnt/tap
+```
+
 ```sh
 brew install --cask costajohnt/tap/murmur
 ```
